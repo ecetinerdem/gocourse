@@ -1,6 +1,8 @@
 package main
 
-import sliceOne "golesson/slice"
+import (
+	"golesson/functions"
+)
 
 func main() {
 	//variables.Variables()
@@ -20,5 +22,8 @@ func main() {
 	//arrays.ArraysFour()
 
 	//sliceOne.SlicesOne()
-	sliceOne.SlicesTwo()
+	//sliceOne.SlicesTwo()
+
+	functions.SayHi()
+
 }
