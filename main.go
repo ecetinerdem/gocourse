@@ -24,6 +24,7 @@ func main() {
 	//sliceOne.SlicesOne()
 	//sliceOne.SlicesTwo()
 
-	functions.SayHi()
+	functions.SayHi("Cetin")
+	functions.Sum(2, 6)
 
 }
