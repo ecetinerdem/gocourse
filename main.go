@@ -1,9 +1,5 @@
 package main
 
-import (
-	"golesson/functions"
-)
-
 func main() {
 	//variables.Variables()
 
@@ -24,7 +20,8 @@ func main() {
 	//sliceOne.SlicesOne()
 	//sliceOne.SlicesTwo()
 
-	functions.SayHi("Cetin")
-	functions.Sum(2, 6)
+	// functions.SayHi("Cetin")
+	// functions.Sum(2, 6)
+	//sum1, subtract1, multiply1, divide1 := functions.FourOperations(6, 2) underscore for not having any of the values
 
 }
