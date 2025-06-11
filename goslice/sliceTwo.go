@@ -1,4 +1,4 @@
-package sliceOne
+package goslice
 
 import "fmt"
 
