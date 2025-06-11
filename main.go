@@ -1,7 +1,8 @@
 package main
 
 import (
-	"golesson/forrange"
+	"fmt"
+	"golesson/pointers"
 )
 
 func main() {
@@ -30,5 +31,16 @@ func main() {
 	//var result = functions.VariadicSum(1, 4, 5, 3, 10)
 
 	//forrange.RangeOne()
-	forrange.RangeTwo()
+	//forrange.RangeTwo()
+
+	//number sent to func is different address than number created!!
+	// number := 20
+	// pointers.PointerOne(&number)
+	// fmt.Printf("Num in main: %v\n", number)
+
+	numbers := []int{1, 2, 3}
+
+	pointers.PointerTwo(numbers)
+
+	fmt.Printf("Num in main: %v\n", numbers[0])
 }
