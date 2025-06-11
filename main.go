@@ -29,6 +29,6 @@ func main() {
 	//sum1, subtract1, multiply1, divide1 := functions.FourOperations(6, 2) underscore for not having any of the values
 	//var result = functions.VariadicSum(1, 4, 5, 3, 10)
 
-	forrange.RangeOne()
-
+	//forrange.RangeOne()
+	forrange.RangeTwo()
 }
