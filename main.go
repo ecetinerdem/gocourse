@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"golesson/pointers"
+	"golesson/forstruct"
 )
 
 func main() {
@@ -38,9 +37,14 @@ func main() {
 	// pointers.PointerOne(&number)
 	// fmt.Printf("Num in main: %v\n", number)
 
-	numbers := []int{1, 2, 3}
+	// numbers := []int{1, 2, 3}
 
-	pointers.PointerTwo(numbers)
+	// pointers.PointerTwo(numbers)
 
-	fmt.Printf("Num in main: %v\n", numbers[0])
+	// fmt.Printf("Num in main: %v\n", numbers[0])
+
+	//forstruct.StructOne()
+
+	forstruct.StructTwo()
+
 }
