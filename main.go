@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"golesson/channels"
+)
+
 func main() {
 	//variables.Variables()
 
@@ -47,4 +52,14 @@ func main() {
 	//go goroutines.OddNums()
 	//time.Sleep(5 * time.Second)
 
+	evenSumChannel := make(chan int)
+	oddsSumChannel := make(chan int)
+	go channels.EvenNums(evenSumChannel)
+	go channels.OddNums(oddsSumChannel)
+
+	evenSum, oddSum := <-evenSumChannel, <-oddsSumChannel
+
+	multiply := evenSum * oddSum
+
+	fmt.Println("Çarpım: ", multiply)
 }
