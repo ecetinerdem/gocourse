@@ -60,5 +60,6 @@ func main() {
 
 	// fmt.Println("Çarpım: ", multiply)
 
-	interfaces.Demo1()
+	//interfaces.Demo1()
+	interfaces.Demo2()
 }
