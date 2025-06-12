@@ -1,9 +1,5 @@
 package main
 
-import (
-	"golesson/forstruct"
-)
-
 func main() {
 	//variables.Variables()
 
@@ -45,6 +41,10 @@ func main() {
 
 	//forstruct.StructOne()
 
-	forstruct.StructTwo()
+	//forstruct.StructTwo()
+
+	//go goroutines.EvenNums()
+	//go goroutines.OddNums()
+	//time.Sleep(5 * time.Second)
 
 }
