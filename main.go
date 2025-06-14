@@ -1,7 +1,7 @@
 package main
 
 import (
-	stringfunctions "golesson/string_functions"
+	"golesson/restful"
 )
 
 func main() {
@@ -78,5 +78,7 @@ func main() {
 
 	//stringfunctions.Demo1()
 
-	stringfunctions.Demo2()
+	//stringfunctions.Demo2()
+
+	restful.Demo1()
 }
