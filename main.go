@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golesson/interfaces"
+	errorhandling "golesson/error-handling"
 )
 
 func main() {
@@ -70,5 +70,9 @@ func main() {
 
 	//errorhandling.Demo1()
 
-	interfaces.Demo3()
+	//interfaces.Demo3()
+
+	//errorhandling.Demo2()
+
+	errorhandling.Guess2(2)
 }
