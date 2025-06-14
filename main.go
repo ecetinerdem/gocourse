@@ -1,7 +1,5 @@
 package main
 
-import "golesson/interfaces"
-
 func main() {
 	//variables.Variables()
 
@@ -61,5 +59,8 @@ func main() {
 	// fmt.Println("Çarpım: ", multiply)
 
 	//interfaces.Demo1()
-	interfaces.Demo2()
+	//interfaces.Demo2()
+
+	//deferstatements.B()
+	//deferstatements.Demo1()
 }
