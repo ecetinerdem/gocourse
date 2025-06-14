@@ -1,7 +1,7 @@
 package main
 
 import (
-	errorhandling "golesson/error-handling"
+	stringfunctions "golesson/string_functions"
 )
 
 func main() {
@@ -74,5 +74,9 @@ func main() {
 
 	//errorhandling.Demo2()
 
-	errorhandling.Guess2(2)
+	//errorhandling.Guess2(2)
+
+	//stringfunctions.Demo1()
+
+	stringfunctions.Demo2()
 }
