@@ -11,7 +11,13 @@ func Demo1() {
 	//f dosyamız
 
 	if err != nil {
+		if pErr, ok := err.(*os.PathError); ok {
+			fmt.Println("File cannot be found", pErr.Path)
+			return
+		}
+
 		fmt.Println("File cannot be found")
+		return
 	} else {
 		fmt.Println("File can be used with file functions", f.Name())
 	}

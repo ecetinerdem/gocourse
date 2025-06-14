@@ -1,5 +1,7 @@
 package main
 
+import errorhandling "golesson/error-handling"
+
 func main() {
 	//variables.Variables()
 
@@ -63,4 +65,6 @@ func main() {
 
 	//deferstatements.B()
 	//deferstatements.Demo1()
+
+	errorhandling.Demo1()
 }
