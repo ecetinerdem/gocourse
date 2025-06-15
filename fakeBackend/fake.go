@@ -1,6 +1,7 @@
 package fakebackend
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -19,23 +20,60 @@ type Category struct {
 	CategoryName string `json:"categoryName"`
 }
 
-func GetAllProducts() {
+func GetAllProducts() ([]Product, error) {
 
 	//Get request sent
-	response, err := http.Get("http://localhost:3000/products")
+	response, errOne := http.Get("http://localhost:3000/products")
 
 	//if not nill there is an error because err is nil at the request
-	if err != nil {
-		fmt.Println(err)
+	if errOne != nil {
+		fmt.Println(errOne)
 	}
 
 	//No matter what, close th request's response body
 	defer response.Body.Close()
 	//I am not sure of this part
-	body, _ := io.ReadAll(response.Body)
+	body, errTwo := io.ReadAll(response.Body)
+
+	if errTwo != nil {
+		fmt.Println(errTwo)
+	}
 
 	//Create products array
 	var products []Product
 	//Unmarshall takes the response body and assigns it to products array
 	json.Unmarshal(body, &products)
+
+	return products, nil
+}
+
+func AddProduct() (Product, error) {
+
+	product := Product{Id: 4, ProductName: "Workstation", CategoryId: 4, UnitPrice: 6000.00}
+
+	jsonProduct, errOne := json.Marshal(product)
+
+	if errOne != nil {
+		fmt.Println(errOne)
+	}
+
+	response, errtwo := http.Post("http://localhost:3000/products", "application/json:charset=utg-8", bytes.NewBuffer(jsonProduct))
+
+	if errtwo != nil {
+		fmt.Println(errtwo)
+	}
+
+	defer response.Body.Close()
+
+	body, errThree := io.ReadAll(response.Body)
+
+	if errThree != nil {
+		fmt.Println(errThree)
+	}
+
+	var productResponse Product
+
+	json.Unmarshal(body, &productResponse)
+
+	return productResponse, nil
 }

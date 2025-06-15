@@ -1,36 +1,60 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "productName": "Laptop",
-            "categoryId": 1,
-            "unitPrice": 5000.99
-        },
-        {
-            "id": 2,
-            "productName": "Mouse",
-            "categoryId": 2,
-            "unitPrice": 4000.99
-        },
-        {
-            "id": 3,
-            "productName": "Keyboard",
-            "categoryId": 3,
-            "unitPrice": 3000.99
-        }
-    ],
-    "categories": [
-        {
-            "id": 1,
-            "categoryName": "Computers"
-        },
-        {
-            "id": 2,
-            "categoryName": "Accessories"
-        },
-        {
-            "id": 3,
-            "categoryName": "Extras"
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "productName": "Laptop",
+      "categoryId": 1,
+      "unitPrice": 5000.99
+    },
+    {
+      "id": "2",
+      "productName": "Mouse",
+      "categoryId": 2,
+      "unitPrice": 4000.99
+    },
+    {
+      "id": "3",
+      "productName": "Keyboard",
+      "categoryId": 3,
+      "unitPrice": 3000.99
+    },
+    {
+      "id": 4,
+      "productName": "Workstation",
+      "categoryId": 4,
+      "unitPrice": 6000
+    },
+    {
+      "id": 4,
+      "productName": "Workstation",
+      "categoryId": 4,
+      "unitPrice": 6000
+    },
+    {
+      "id": 4,
+      "productName": "Workstation",
+      "categoryId": 4,
+      "unitPrice": 6000
+    },
+    {
+      "id": 4,
+      "productName": "Workstation",
+      "categoryId": 4,
+      "unitPrice": 6000
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "categoryName": "Computers"
+    },
+    {
+      "id": "2",
+      "categoryName": "Accessories"
+    },
+    {
+      "id": "3",
+      "categoryName": "Extras"
+    }
+  ]
 }

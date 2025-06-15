@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golesson/restful"
+	fakebackend "golesson/fakeBackend"
 )
 
 func main() {
@@ -80,5 +80,9 @@ func main() {
 
 	//stringfunctions.Demo2()
 
-	restful.Demo2()
+	//restful.Demo2()
+
+	fakebackend.GetAllProducts()
+	fakebackend.AddProduct()
+	fakebackend.GetAllProducts()
 }
